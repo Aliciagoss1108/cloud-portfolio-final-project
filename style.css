@@ -109,3 +109,13 @@ nav a:hover, nav a.active {
         font-size: 1.85rem;
     }
 }
+
+/* Hero banner at the top of main content */
+.hero-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 10px auto 25px auto;
+    border-radius: 8px;
+}
