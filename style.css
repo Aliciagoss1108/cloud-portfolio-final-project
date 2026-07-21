@@ -1,0 +1,111 @@
+/*
+Name: Alicia Goss
+Filename: style.css
+*/
+
+/* 1. Body Element Style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4fbfb;
+    color: #2d3748;
+}
+
+/* 2. Header Element Style */
+header {
+    background-color: #008080;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 4px solid #e91e63;
+}
+
+/* 3. Heading Element Style */
+h1, h2, h3 {
+    color: #008080;
+}
+
+/* 4. Paragraph Element Style */
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* 5. Table & General Element Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid #b2dfdb;
+    padding: 12px;
+    text-align: left;
+}
+
+th{
+    background-color: #008080;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #e91e63;
+}
+
+.pink-btn {
+    background-color: #e91e63;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pink-btn:hover {
+    background-color: #c2185b;
+}
+
+/* CSS Grid Layout used for image gallery alignment */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Mobile Media */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 1.85rem;
+    }
+}
