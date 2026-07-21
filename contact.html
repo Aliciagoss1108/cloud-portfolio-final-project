@@ -1,0 +1,75 @@
+<!-- 
+  Name: Alicia Goss
+  Filename: contact.html
+  Description: Contact page featuring email link and multi-element form.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Alicia Goss</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <h1>Get in Touch</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Coursework</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Information</h2>
+    <p>Direct Email: <a href="mailto:Alicia.goss1108@gmail.com">Alicia.goss1108@gmail.com</a></p>
+
+    <h2>Send a Message</h2>
+    <form id="contact-form" action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="phone" id="phone" name="phone" required><br><br>
+
+        <p>Preferred Follow-up Method:</p>
+        <input type="checkbox" id="check-email" name="contact-pref" value="email">
+        <label for="check-email">Email Response</label>
+        <input type="checkbox" id="check-phone" name="contact-pref" value="phone">
+        <label for="check-phone">Phone Call</label>
+
+        <p>Inquiry Category:</p>
+        <input type="radio" id="recruiter" name="category" value="recruiter">
+        <label for="recruiter">Recruiter / Emplyer</label>
+        <input type="radio" id="colleague" name="category" value="colleague">
+        <label for="colleague">Peer / Colleague</label><br><br>
+
+        <label for="topic">Subject Topic:</label>
+        <select id="topic" name="topic">
+            <option value="cloud">Cloud Architecture</option>
+            <option value="devops">DevOps & Automation</option>
+            <option value="general">General Inquiry</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit" class="pink-btn">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alicia Goss. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
